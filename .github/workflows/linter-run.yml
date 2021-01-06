@@ -1,4 +1,4 @@
-name: codeclimate-check
+name: linter-run
 
 on:
   - push
@@ -19,5 +19,3 @@ jobs:
         run: make install
       - name: Run linter
         run: make lint
-
-
