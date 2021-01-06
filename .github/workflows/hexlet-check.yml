@@ -15,4 +15,4 @@ jobs:
         uses: hexlet/project-action@release
 
         env:
-          HEXLET_ID: ${{ secrets.HEXLET_ID }}
+          hexlet-id: ${{ secrets.HEXLET_ID }}
