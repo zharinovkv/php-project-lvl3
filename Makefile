@@ -29,10 +29,10 @@ deploy:
 	git push heroku
 
 lint:
-	composer run-script phpcs -- --standard=PSR12 app routes resources/views
+	composer run-script phpcs -- --standard=PSR12 app routes
 
 lint-fix:
-	composer run-script phpcbf -- --standard=PSR12 src
+	composer run-script phpcbf -- --standard=PSR12 app routes
 
 compose:
 	docker-compose up
