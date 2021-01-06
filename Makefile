@@ -54,3 +54,7 @@ compose-db:
 
 compose-down:
 	docker-compose down -v
+
+install:
+	composer install
+
