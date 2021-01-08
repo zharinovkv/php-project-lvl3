@@ -18,8 +18,4 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('domains', [DomainController::class, 'index'])->name('domains.index');
-
-Route::get('domains/{id}', [DomainController::class, 'show'])->name('domains.show');
-
-Route::post('domains', [DomainController::class, 'store'])->name('domains.store');
+Route::resource('domains', DomainController::class);
